@@ -17,9 +17,9 @@ window.onload = function() {
             // box.oncontextmenu = function() {
             //     console.log("鼠标右键单击");
             // }
-            // box.onmousewheel = function() {
-            //     console.log("鼠标滚动");
-            // }
+            box.onmousewheel = function() {
+                console.log("鼠标滚动");
+             }
             // box.onmousedown = function() {
             //     console.log("鼠标按下");
             // }
@@ -34,11 +34,7 @@ window.onload = function() {
             // box.onmouseenter = function() {
             //     console.log("鼠标移入");
             // }
-             box.onmouseleave = function() {
-                console.log("鼠标移出");
-             }
-
-         }
+        }
      </script>
 
 
