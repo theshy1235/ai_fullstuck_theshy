@@ -8,7 +8,7 @@ const createPhoneNumber = (nums) => {
     //架构的感觉 字符串模板 一个系列
     let format = '(xxx)xxx-xxx';//字符串模板
     for (let i = 0; i < nums.length; i++) {
-        format = format.replace('x', nums[i])
+        format = format.replace('x', nums[i])//替换
     }
     return format
 }

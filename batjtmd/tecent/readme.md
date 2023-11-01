@@ -29,3 +29,5 @@
       - 函数是一等对象 
            function reatePhoneNumber（）{}// 函数 也是object
            const reatePhoneNumber() {} // 函数表达式
+
+-优质的代码，优化代码
