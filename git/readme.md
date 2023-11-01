@@ -7,6 +7,9 @@
    - 反馈成功初始化一个代码仓库
        git仓库不能嵌套
        。git 文件夹 仓库的密码， 不要去动它
+       默认master/main 主分支
+       HEAD 指针指向第一次分支
+       暂存区 和仓库两部分
 -本地代码仓库
 -git 是一个版本控制系统，开源
  仓库里放的文件的多个版本
@@ -43,3 +46,4 @@
  verstion control 秒懂了 小猪
  git reset --hard id 可以让我们拥有时光机
     git reflog 所有的提交记录
+- change + Untracked 
