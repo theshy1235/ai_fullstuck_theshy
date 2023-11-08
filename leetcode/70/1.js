@@ -9,3 +9,4 @@ function climStairs(n) {
     return climStairs(n - 1) + climStairs(n - 2);
 }
 console.log(climStairs(10))
+
