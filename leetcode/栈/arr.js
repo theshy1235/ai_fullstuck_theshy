@@ -15,12 +15,12 @@
 //     }
 // }
 
-var arr = ['a', 'b' ,'c','d']
+var arr = ['a', 'b', 'c', 'd']
 //arr.forEach(function(item,index,arr){
-    //console.log(item,index,arr);
-    //arr [index] = item + '1'
+//console.log(item,index,arr);
+//arr [index] = item + '1'
 //})
-arr.map(function(item,index,arr){
-    console.log(item, index ,arr)
+arr.map(function (item, index, arr) {
+    console.log(item, index, arr)
 })
 console.log(arr);

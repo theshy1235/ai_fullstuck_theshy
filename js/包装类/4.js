@@ -1,11 +1,27 @@
-// var obj = {}
-// obj.a = 1
+var num =123
+num.a ='hello'
+console.log(num.a);//undefinded
 
-// var num = 123
-// num.a = 'hello'
-// console.log(num.a);//undefined
 
-var num = new Number(123);//String() Number() Object() Arrey() Date() Boolean() 内部函数
-num.a = 'hello'
-delete num.a
-console.log(num.a);
+// var num = new Number();//String()  Number()   Boolean()  Object() Array()  Date()内部函数
+// num.a='hello'
+// delete  num.a
+// console.log(num.a);//类的包装
+
+var arr=[1,2,3,4]
+arr.length
+console.log(arr);
+
+
+var str ='abcd'
+str.length=2
+//new String('abcd').length=2  delete
+
+console.log(str.length)//4
+//new String('abcd').length
+
+
+// function String(s){
+//     this.length
+// }
+原始值是不具有属性和方法的
