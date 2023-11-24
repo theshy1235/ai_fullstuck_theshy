@@ -1,16 +1,55 @@
-function myInstance(L, R) {
-        let left = L._proto_
-        let right = R.prototype
-    
-        while(left !== null) {
-            if (left === right) {
-                return true
-            }
-            left = left._proto_
-        }
-        return false
+// function myInstance(L, R) {
+//     let left = L.__proto__;
+//     let right = R.prototype;
+
+//     while (left !== null) {
+//         if (left === right) {
+//             return true;
+//         }
+//         left = left.__proto__;
+//     }
+//     return false;
+// }
+
+// console.log(myInstance({}, Array));
+// console.log(myInstance([], Array));
+
+
+
+
+    function ListNode(val, next) {
+        this.val = (val === undefined ? 0 : val);
+        this.next = (next === undefined ? null : next);
     }
     
-    console.log(myInstance({}, Array));
-    console.log(myInstance([], Array));
+    var addTwoNumbers = function(l1, l2) {
+        let dummy = new ListNode(); 
+        let current = dummy;
+        let carry = 0; 
     
+        while (l1 !== null || l2 !== null) {
+            let x = (l1 !== null) ? l1.val : 0;
+            let y = (l2 !== null) ? l2.val : 0;
+    
+            let sum = x + y + carry;
+            carry = Math.floor(sum / 10);
+            current.next = new ListNode(sum % 10);
+    
+           
+            current = current.next;
+            if (l1 !== null) {
+                l1 = l1.next;
+            }
+            if (l2 !== null) {
+                l2 = l2.next;
+            }
+        }
+    
+       
+        if (carry > 0) {
+            current.next = new ListNode(carry);
+        }
+    
+        return dummy.next; 
+    };
+  
