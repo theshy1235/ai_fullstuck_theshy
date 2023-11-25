@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">获取新歌</button>
+    <ul id="ul"></ul>
+    <script>
+        let btn = document.getElementById('btn')
+        btn.addEventListener('click', () => {
+            // 发一个http请求
+            let xhr = new XMLHttpRequest()
+            xhr.open('GET', 'http://192.168.31.26:3000/top/song?type=7', true)
+            //open准备请求 GET   请求地址                                 判断同步还是异步
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // console.log(JSON.parse(xhr.responseText));//responseText响应文本
+                    const result = JSON.parse(xhr.responseText).data;
+                    console.log(result)
+                    for (let i = 0; i < result.length; i++) {
+                        const li = document.createElement('li')
+                        li.innerText = result[i].name
+                        document.getElementById('ul').appendChild(li)
+                    }
+                }
+            }//监听器
+            xhr.send()//发送出去
+        })
+    </script>
+</body>
+
+</html>
