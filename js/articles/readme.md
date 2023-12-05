@@ -13,4 +13,4 @@
       遍历数组的每一项， 执行callback ,callback 返
       回值就是新数组每一项的值
     - join('') li 的拼接字符串
-    - innerHTML = 
+    - innerHTML =  

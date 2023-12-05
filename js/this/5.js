@@ -27,3 +27,4 @@ function foo() {
     bar()
 }
 foo.call(Obj)
+

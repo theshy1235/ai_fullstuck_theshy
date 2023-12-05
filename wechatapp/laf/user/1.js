@@ -5,7 +5,7 @@ function sleep(t) {
         }, t)
     })
     return p
-}v 
+}
 // 异步通过promise 的then 变成了同步
 sleep(1000)
     .then((msg) => {

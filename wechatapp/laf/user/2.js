@@ -1,7 +1,7 @@
 // 到底做了什么？ 函数放到event loop中
-setTimeout(function () {
-    //console.log('1000ms以后')
-}, 1000)
+// setTimeout(function () {
+//     //console.log('1000ms以后')
+// }, 1000)
 
 const p = new Promise((resolve, reject) => {
     console.log('实例化Promise')

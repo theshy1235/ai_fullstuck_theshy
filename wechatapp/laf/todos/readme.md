@@ -9,7 +9,7 @@
    - 数据库 CRUD（数据库的增删改查）
 - Laf 
 
-## 云开发平台 Laf 
+## 5
 - 现代最酷的开发方式是云开发方式
   - https://oss.laf.run/qbkw0t-home/index.html
   1. laf云提供了非常方便的资源存储 存储 oss 上班的感觉

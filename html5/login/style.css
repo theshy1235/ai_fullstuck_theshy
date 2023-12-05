@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;   
+    background-color: rgba(212, 48, 48, 1);
+}
+.login{
+    padding: 0 45px;
+	height: 100vh;
+	background-color: rgba(212, 48, 48, 1);
+}
+.login__hd {
+    top: 5px;
+    left: 150px;
+    position: absolute;
+    text-align: center ;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1)
+} 
+.login__logo{
+    position: relative;
+    text-align: center ;
+    margin-top: 120px;
+}
+.login__wrsp{
+    position: relative;
+    width: 271px;
+    height: 36px;
+    top: 200px;
+    left: 56px;
+    text-align: center ;
+    color: rgba(255, 255, 255, 1);
+}
+.login__wrsp_p{
+    position: relative;
+    text-align: center ;
+    color: rgba(255, 255, 255, 1);
+}
+.login__wrsp_s{
+    text-align: center ;
+    color: rgba(255, 255, 255, 1);
+}
