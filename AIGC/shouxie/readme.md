@@ -7,3 +7,5 @@
    执行器就是异步窗口的容器 当异步任务结束后，成功就调用resolve()
    失败就调用reject(error)  this.state fulfilled | rejected
    await 执行完成 ，并把data 交给左边 接着返回正常的同步流程。
+
+
